@@ -567,12 +567,34 @@ img, video {
   z-index: 2;
   text-align: center;
   height: 55px;
-  background-color: rgba(0, 1, 1, 0.5);
+  background-color: rgba(0, 1, 1, 0.8);
+  
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+     opacity: 1;
+  }
+  25%, 75% {
+     opacity: 0;
+  }
+}
+
+
+
+nav, .flash {
+  animation-name: flash;
+  animation-duration: 4s;
+  animation-name: flash;
 }
 
 .cd-hero__nav nav, .cd-hero__nav ul, .cd-hero__nav li, .cd-hero__nav a {
   height: 100%;
 }
+
+
+
+
 
 .cd-hero__nav nav {
   display: inline-block;
